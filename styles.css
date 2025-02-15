@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(to bottom right, #1f2937, #111827);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.pipeline {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+.step {
+    background: #374151;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.step.completed {
+    border-left: 4px solid #10b981;
+}
+.step.in-progress {
+    border-left: 4px solid #3b82f6;
+}
+.step.pending {
+    border-left: 4px solid #9ca3af;
+}
